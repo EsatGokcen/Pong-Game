@@ -1,4 +1,6 @@
 import pygame
+from paddle import Paddle
+from ball import Ball
 
 def main():
     pygame.init()
