@@ -11,7 +11,8 @@ class Ball:
         self.x_vel = random.randint(-15,15)
         self.y_vel = random.randint(-15,15)
         if self.x_vel == 0 and self.y_vel == 0: #makes sure ball is always moving
-            self.x_vel = 5 
+            self.x_vel = random.randint(-15,15)
+            self.y_vel = random.randint(-15,15)
 
     def draw(self,screen):
         pygame.draw.circle(screen,self.color,(self.x,self.y),self.radius)
