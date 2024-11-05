@@ -1,7 +1,7 @@
 import pygame
 from paddle import Paddle
 from ball import Ball
-from collision import *
+from config import *
 
 def main():
     pygame.init()
