@@ -3,13 +3,13 @@ import random
 
 class Ball:
     
-    def __init__(self,speed_x,speed_y,radius,color):
+    def __init__(self,radius,color):
         self.x = 400
         self.y = 300
         self.radius = radius
         self.color = color
-        self.x_vel = speed_x
-        self.y_vel = speed_y
+        self.x_vel = 15
+        self.y_vel = 15
         if self.x_vel == 0 and self.y_vel == 0: #makes sure ball is always moving
             self.x_vel = random.randint(-15,15)
             self.y_vel = random.randint(-15,15)

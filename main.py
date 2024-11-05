@@ -13,7 +13,7 @@ def main():
     #Game Objects:
     player_1 = Paddle(10,100,10,100,'red')
     player_2 = Paddle(WIDTH - 20,100,10,100,'blue')
-    ball = Ball(WIDTH // 2, HEIGHT // 2, 10,'white')
+    ball = Ball(10,'white')
 
     #Time:
     clock = pygame.time.Clock()
