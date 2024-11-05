@@ -1,0 +1,29 @@
+# Compiled Python files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# IDE and editor-specific
+.vscode/
+.idea/
+
+# Logs and environment config
+*.log
+.env
+
+# Any other temporary files or folders you might add
+screenshots/
+*.tmp
