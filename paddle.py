@@ -14,6 +14,6 @@ class Paddle:
 
     def move(self,direction):
         if direction == 'up':
-            self.y -= 5
+            self.y -= 10
         elif direction == 'down':
-            self.y += 5
+            self.y += 10
