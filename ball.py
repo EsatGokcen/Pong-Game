@@ -8,8 +8,8 @@ class Ball:
         self.y = 300
         self.radius = radius
         self.color = color
-        self.x_vel = 15
-        self.y_vel = 15
+        self.x_vel = 12
+        self.y_vel = 12
         if self.x_vel == 0 and self.y_vel == 0: #makes sure ball is always moving
             self.x_vel = random.randint(-15,15)
             self.y_vel = random.randint(-15,15)
