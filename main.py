@@ -16,6 +16,10 @@ def main():
     player_2 = Paddle(WIDTH - 20,100,10,100,'blue')
     ball = Ball(10,'white')
 
+    #Score variables:
+    player1_score = 0
+    player2_score = 0
+
     #Time:
     clock = pygame.time.Clock()
     FPS = 60 #frames per second / frame rate
@@ -49,7 +53,14 @@ def main():
         player_collision(ball, player_1, player_2)
 
 
-        #Check for Scoring: (eventually)
+        #Check for Scoring: 
+        if score_count(ball, WIDTH) == 'right':
+            player2_score += 1
+            print(f"Player 2: {player2_score}")
+        elif score_count(ball, WIDTH) == 'left':
+            player1_score += 1
+            print(f"Player 1: {player1_score}")
+
 
         #Draw Game Objects:
         screen.fill((0,0,0))
