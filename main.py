@@ -53,7 +53,7 @@ def main():
         player_collision(ball, player_1, player_2)
 
 
-        #Check for Scoring: 
+        #Check for Scoring: ERROR - COUNTS TOO MANY POINTS 
         if score_count(ball, WIDTH) == 'right':
             player2_score += 1
             print(f"Player 2: {player2_score}")
