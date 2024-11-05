@@ -1,6 +1,7 @@
 import pygame
 from paddle import Paddle
 from ball import Ball
+from collision import *
 
 def main():
     pygame.init()
@@ -42,18 +43,10 @@ def main():
         ball.move()
 
         #Check for collisions with walls:
-        if ball.y < 0 or ball.y > HEIGHT - ball.radius * 2:
-            ball.bounce()
-        if ball.x < 0 or ball.x > WIDTH - ball.radius * 2:
-            ball.bounce()
+        wall_collision(ball, HEIGHT, WIDTH)
 
         #Check for collisions with players:
-        if ball.x < player_1.x + player_1.width and ball.x > player_1.x:
-            if ball.y < player_1.y + player_1.height and ball.y > player_1.y:
-                ball.bounce()
-        if ball.x < player_2.x + player_2.width and ball.x > player_2.x:
-            if ball.y < player_2.y + player_2.height and ball.y > player_2.y:
-                ball.bounce()
+        player_collision(ball, player_1, player_2)
 
 
         #Check for Scoring: (eventually)
